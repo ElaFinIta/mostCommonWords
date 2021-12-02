@@ -40,7 +40,7 @@ function mostCommonWords(text, howManyWords) {
     const freqWords = [];
     // take keys with corresponding values i.e. sort keys
     for (let i of valuesArr) {
-        // BUGGY! This works only when there are no equal values (frequencies) or when we only take the unique frequqncues or at least the first frequency of non unique frequencies:
+        // BUGGY! This works only when there are no equal values (frequencies) or when we only take the unique frequencies or at least the first frequency of non unique frequencies:
         freqWords.push(Object.keys(freqHash).find(key => freqHash[key] === i));
     }
 
